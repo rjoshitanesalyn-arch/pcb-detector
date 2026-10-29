@@ -1,0 +1,10 @@
+dataset/
+dataset_original/
+dataset.zip
+*.zip
+.venv/
+__pycache__/
+screenshots/
+runs/eval/
+runs/predictions/
+runs/pcb/weights/last.pt
