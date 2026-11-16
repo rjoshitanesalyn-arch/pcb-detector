@@ -16,7 +16,7 @@ from ultralytics.utils.plotting import Colors
 
 ROOT     = Path(__file__).resolve().parent
 WEIGHTS  = ROOT / "runs" / "pcb" / "weights" / "best.pt"
-CAM_IDX  = 0                      # try 1 if the wrong camera opens
+CAM_IDX  = 1                      # try 1 if the wrong camera opens
 IMGSZ    = 640                    # lower to 480 for a faster (but less accurate) feed
 SHOT_DIR = ROOT / "screenshots"
 
