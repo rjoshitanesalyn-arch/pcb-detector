@@ -196,7 +196,7 @@ class PCBDetectorGUI:
         self.root.bind("<minus>", lambda e: self._conf_down())
         self.root.protocol("WM_DELETE_WINDOW", self._quit)
 
-        self.cap = cv2.VideoCapture(CAM_IDX)
+        self.cap = cv2.VideoCapture(CAM_IDX, cv2.CAP_DSHOW)
         if not self.cap.isOpened():
             self.cam_label.config(text="Camera not found.\nCheck the camera or change CAM_IDX.")
             self.status_lbl.config(text="Camera not found", fg=RED)
